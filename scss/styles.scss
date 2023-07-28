@@ -1,0 +1,137 @@
+ /** colores SCSS **/
+ $color-primario: white;
+ $color-secundario: #ccc;
+ $color-tercero: #4caf50;
+ $color-cuarto: rgb(61, 118, 194);
+
+ /** MIXINS **/
+ @mixin background-repeat-position-size-attachment {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+/** layout GRID  (index/servicios/info) **/
+.layout {
+    width: 1920px;
+    height: 1080px;
+
+    display: grid;
+    grid:
+    "header" auto
+    "main" auto
+    "footer" auto
+    / auto;
+    gap: 8px;
+}
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.text-justify {
+        text-align: justify;
+}
+/** ajuste de fotos index **/
+.fotos {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+/** cuerpo de pagina **/
+body {
+    background-color: $color-cuarto;
+}
+/** imagen S principal **/
+#imagen {   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2%;     
+}
+/** Formulario de CONTACTO **/
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid $color-secundario;
+    border-radius: 5px;
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        border: 1px solid $color-secundario;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    } 
+    input[type="submit"] {
+        background-color: $color-tercero;
+        color:  $color-primario;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    } 
+    input[type="submit"]:hover {
+        background-color: $color-tercero;
+    }
+}
+/** imagen contacto **/
+#contacto-fondo {
+    background-image: url(../images/saludo.webp);
+    @include background-repeat-position-size-attachment;
+}   
+/** texto color blanco**/
+#contacto-text {
+    color:  $color-primario;
+}
+
+body {
+    font: 100%;
+}
+/** imagen index **/
+#index-fondo {
+    background-image: url(../images/generación\ de\ energía.webp);
+    @include background-repeat-position-size-attachment;
+}
+/** imagen Componentes **/
+#materiales-fondo {
+    background-image: url(../images/solar.jpg);
+    @include background-repeat-position-size-attachment;
+}
+/** imagen Servicios **/
+#servicios-fondo {
+    background-image: url(../images/ensayo1.jpg);
+    @include background-repeat-position-size-attachment;
+}
+/** imagen +info **/
+#info-fondo {
+    background-image: url(../images/proyecto.avif);
+    @include background-repeat-position-size-attachment;
+}
+/** flex servicios **/
+.layout-flex-serv {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+.layout-flex-info {
+    display: flex;
+    gap: 400px;
+    justify-content: space-around;
+    align-items: center;
+  }

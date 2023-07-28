@@ -1,0 +1,19 @@
+{
+  "name": "elec-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucasiwan/PreEntrega3-Iwaniszyn.git"
+  },
+  "author": "Lucas Iwaniszyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucasiwan/PreEntrega3-Iwaniszyn/issues"
+  },
+  "homepage": "https://github.com/Lucasiwan/PreEntrega3-Iwaniszyn#readme"
+}
