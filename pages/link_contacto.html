@@ -48,42 +48,44 @@
                     </div>
                 </nav> 
             </div>
-            <div class="main">
+            <div class="main  container">
                      
                 <div class="text-center">
                     <h1 id="contacto-text">Contactanos para cualquier consulta o inquietud</h1>
                 </div>
-
-                    <form action="/enviar-mensaje" method="POST">
-                        <label for="nombre">Nombre:</label><br />
-                        <input type="text" id="nombre" name="nombre" /><br />
-                        <label for="email">Email:</label><br />
-                        <input type="email" id="email" name="email" /><br />
-                        <select class="text-center" name="Servicio">
-                            <option value="A">Servicios</option>
-                            <option value="B">Laboratorio</option>
-                            <option value="C">Componentes</option>
-                        </select>
-                        <label for="mensaje">Amplia tu consulta:</label><br />
-                        <textarea id="mensaje" name="mensaje"></textarea><br />
-                        <input type="submit" value="Enviar mensaje" />
-                    </form>
-            
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-auto">
+                        <form action="/enviar-mensaje" method="POST">
+                            <label for="nombre">Nombre:</label><br />
+                            <input type="text" id="nombre" name="nombre" /><br />
+                            <label for="email">Email:</label><br />
+                            <input type="email" id="email" name="email" /><br />
+                            <select class="text-center" name="Servicio">
+                                <option value="A">Servicios</option>
+                                <option value="B">Laboratorio</option>
+                                <option value="C">Componentes</option>
+                            </select>
+                            <label for="mensaje">Amplia tu consulta:</label><br />
+                            <textarea id="mensaje" name="mensaje"></textarea><br />
+                            <input type="submit" value="Enviar mensaje" />
+                        </form>
+                    </div>
+                </div>
                 <div class="text-center">
                     <p>
-                        <h5 id="contacto-text"> info@elec-lab.com</h5>
-                        <h5 id="contacto-text"> +541133557799</h5>
-                        <h5 id="contacto-text">Av. de las especias 7733</h5>
-                        <h5 id="contacto-text">CP 1166</h5>
+                        <p id="contacto-text"> info@elec-lab.com</p>
+                        <p id="contacto-text"> +541133557799</p>
+                        <p id="contacto-text">Av. de las especias 7733</p>
+                        <p id="contacto-text">CP 1166</p>
                     </p>
                 
-                    <img src="../images/google-maps-links.png" style="width: 5rem;" alt="Mapa">
+                    <img src="../images/google-maps-links.png" class="img-width-5" alt="Mapa ubicacion">
                 </div>
                 <div class="footer">
                     <hr>
                     <div class="grid text-center">
-                        <a class= "btn btn-primary btn-lg" href="#" role="button">Terminos y condiciones</a> 
-                        <a class= "btn btn-primary btn-lg" href="#" role="button">Politicas de privacidad</a>
+                        <a class= "btn btn-primary color-button btn-sm" href="#" role="button">Terminos y condiciones</a> 
+                        <a class= "btn btn-primary color-button btn-sm" href="#" role="button">Politicas de privacidad</a>
                     </div>
                 </div>
             </div>

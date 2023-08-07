@@ -3,7 +3,7 @@
 /** MIXINS **/
 /** layout GRID  (index/servicios/info) **/
 .layout {
-  width: 1920px;
+  width: 100%;
   height: 1080px;
   display: grid;
   grid: "header" auto "main" auto "footer" auto/auto;
@@ -16,6 +16,7 @@
 
 .main {
   grid-area: main;
+  text-align: center;
 }
 
 .footer {
@@ -39,6 +40,7 @@
 /** cuerpo de pagina **/
 body {
   background-color: rgb(61, 118, 194);
+  max-width: 100%;
 }
 
 /** imagen S principal **/
@@ -133,7 +135,7 @@ body {
 
 /** imagen +info **/
 #info-fondo {
-  background-image: url(../images/proyecto.avif);
+  background-image: url(../images/proyecto.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -153,6 +155,44 @@ body {
   gap: 400px;
   justify-content: space-around;
   align-items: center;
+}
+
+/** color de botones **/
+a.color-button {
+  background-color: rgb(84, 38, 124);
+  border-color: rgb(84, 38, 124);
+}
+
+a.color-button:hover {
+  background-color: rgb(129, 62, 187);
+  border-color: rgb(84, 38, 124);
+}
+
+/** tamaño de imagenes **/
+.img-width-5 {
+  width: 8rem;
+}
+
+.img-width-18 {
+  width: 18rem;
+}
+
+.img-width-25 {
+  width: 25rem;
+}
+
+.img-width-height-25 {
+  width: 25rem;
+  height: 20rem;
+}
+
+.img-info {
+  width: 25rem;
+  height: 10rem;
+}
+
+.margin-auto {
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
